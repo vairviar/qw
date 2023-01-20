@@ -1,0 +1,14 @@
+on: [push]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: kune
+    steps:
+      - uses: actions/checkout@v2
+      - uses: education/autograding@v1
